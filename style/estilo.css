@@ -1,0 +1,91 @@
+/*PC first*/
+
+/*reset*/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    background-color: blue;
+    color: white;
+}
+
+.center{
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+
+
+
+/*---------------------------Inicio de codeo de cartas teachers hechas por mi :)-----------------------*/
+
+.grid-carta{ /*Seteo tamanio y distribucion de las cartas de los teachers*/
+    height: 300px;
+    width: 200px;
+    border: solid 1px black;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "nombre nombre nombre"
+    "fotito fotito fotito"
+    "desc desc desc"
+    "l-face l-insta l-wa"
+    ;  
+    background-color: #0affba; 
+    align-items: center;
+    justify-items: center;
+    color: #5a1eec;
+    
+    }
+    
+    .nombre{ /*Seteo del nombre*/
+        grid-area: nombre;
+        border-bottom: solid 1px blue;
+        font-size: 125%;
+        font-weight: bolder;
+    }
+    
+    .fotito{/*Seteo del tamanio de la fotito */
+    height: 100px;
+    width: 100px;
+    grid-area: fotito;
+    
+    }
+    
+    .desc{/*Seteo de la descripcion*/
+        grid-area: desc;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .l-face{/*grid area face*/
+    grid-area: l-face;
+    }
+    
+    .l-insta{/*grid area inst*/
+        grid-area: l-insta;
+    }
+    
+    .l-wa{/*grid area wa*/
+        grid-area: l-wa;
+    }
+    
+    .logo-carta{/*Seteo de tamanio de logos*/
+        height: 50px;
+        width: 50px;   
+    }
+    
+    /*---------------------------Fin de codeo de cartas teachers hechas por mi :)-----------------------*/
+    
+
+
+
