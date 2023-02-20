@@ -12,39 +12,144 @@
      <link rel="stylesheet" href="./style/estilo.css">
 </head>
 <body >
-    <header>       
+    <header class="sticky-top">   
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" class="logo-nav"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav positio-nav">
+              <a class="nav-link" href="#">Cursos</a>
+              <a class="nav-link" href="#">Alumnos</a>
+              <a class="nav-link ">Nosostros</a>
+              <a class="nav-link ">Contactanos</a>
+            </div>
+          </div>
+        </div>
+      </nav>    
     </header>
 
     <main>
       <section class="container-fluid">
         <!-- INCICIO ARTICLE1 (MEMBRESIA MENSUAL) -->
-        <article>
+        <article class="article1">
           <h2 class="center">Membresias Mensual</h2>
           <div class="row ">
             <div class="col-lg-4 col-sm-12 center">
-              <p>Acceso a todo el contenido y clases personales. Descubri q paquete te conviene mas a vos</p>
+              <p class="p-desc">Acceso a todo el contenido y clases personales. Descubri q paquete te conviene mas a vos</p>
               <img src="./img/cree.jpg" alt="">
             </div>
             <div class="col-lg-8 col-sm-12">
-              Tarjetas
+              <div class="row">
+                <!-- INICIO PRIMER CURSO -->
+            <div class="col-sm-6 col-lg-3 space-evenly">
+              <div class="tarjeta-cursos">
+                <div class="nombre-curso">
+                  <p>Curso Viajero</p>
+                </div>
+                <div class="precio-curso">
+                  <p class="precio-curso-precio">$20000</p>
+                  <p class="precio-curso-duracion">3 meses</p>
+                </div>
+                <div class="desc-curso">
+                  <p class="desc-curso-titulo center">Horarios:</p>
+                  <p class="desc-curso-incluye center">Martes y jueves 18hs</p>
+                  <button type="button" class="desc-curso-comprar center">Comprar</button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- FIN PRIMER CURSO -->
+
+
+            <!-- INICIO SEGUNDO CURSO -->
+              <div class="col-sm-6 col-lg-3 space-evenly">
+                <div class="tarjeta-cursos">
+                  <div class="nombre-curso">
+                    <p>Nombre Curso</p>
+                  </div>
+                  <div class="precio-curso">
+                    <p class="precio-curso-precio">Precio Curso</p>
+                    <p class="precio-curso-duracion">Tiempo curso</p>
+                  </div>
+                  <div class="desc-curso">
+                    <p class="desc-curso-titulo center">Titulo Descripcion curso</p>
+                    <p class="desc-curso-incluye center">Incluye descripcion</p>
+                    <button type="button" class="desc-curso-comprar center">Comprar</button>
+                  </div>
+                </div>
+
+              </div>
+              
+            
+            <!-- FIN SEGUNDO CURSO -->
+
+
+            <!-- INICIO TERCER CURSO -->
+
+              <div class="col-sm-6 col-lg-3 space-evenly">
+                <div class="tarjeta-cursos">
+                  <div class="nombre-curso">
+                    <p>Nombre Curso</p>
+                  </div>
+                  <div class="precio-curso">
+                    <p class="precio-curso-precio">Precio Curso</p>
+                    <p class="precio-curso-duracion">Tiempo curso</p>
+                  </div>
+                  <div class="desc-curso">
+                    <p class="desc-curso-titulo center">Titulo Descripcion curso</p>
+                    <p class="desc-curso-incluye center">Incluye descripcion</p>
+                    <button type="button" class="desc-curso-comprar center">Comprar</button>
+                  </div>
+                </div>
+
+              </div>
+            
+            <!-- FIN TERCER CURSO -->
+
+            <!-- INICIO CUARTO CURSO -->
+
+              <div class="col-sm-6 col-lg-3 space-evenly">
+                <div class="tarjeta-cursos">
+                  <div class="nombre-curso">
+                    <p>Nombre Curso</p>
+                  </div>
+                  <div class="precio-curso">
+                    <p class="precio-curso-precio">Precio Curso</p>
+                    <p class="precio-curso-duracion">Tiempo curso</p>
+                  </div>
+                  <div class="desc-curso">
+                    <p class="desc-curso-titulo center">Titulo Descripcion curso</p>
+                    <p class="desc-curso-incluye center">Incluye descripcion</p>
+                    <button type="button" class="desc-curso-comprar center">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- FIN CUARTO CURSO -->
+              </div>
             </div>  
           </div>
         </article>
         <!-- FIN ARTICLE1 (MEMBRESIA MENSUAL) -->
+
+
         <!-- INCICIO ARTICLE2 (NUESTROS TEACHERS) -->
-        <article>
+        <article class="article2">
           <h2 class="center">Nuestros Teachers</h2>
           <div class="row">
             <div class="col-lg-4 col-sm-12 center">
               <img src="./img/teachers.jpg" alt="">
-              <p>Conoce y chatea con nuestros teachers para ver cual te gusta mas a vos y conocer sus cursos</p>
+              <p class="p-desc">Conoce y chatea con nuestros teachers para ver cual te gusta mas a vos y conocer sus cursos</p>
             </div>
             <div class="col-lg-8 col-sm-12">
               
               <div class="row center">
 
                 <!---------------- Inicio PRIMER teacher ----------------->
-                <div class="col-lg-4 col-sm-12  "> 
+                <div class="col-lg-4 col-sm-12 flex-teacher "> 
                   <div class="grid-carta"><!-- inicio del grid -->
                     <p class="nombre">Marina Perez</p><!-- Nombre del teacher -->
                     <img src="./img/marina perez.jpg" alt="" class="fotito"><!-- Fotito del teacher -->
@@ -59,7 +164,7 @@
                 <!------------Fin del PRIMER teacher---------------------->
 
                 <!----------- Inicio SEGUNDO teacher ------>
-                <div class="col-lg-4 col-sm-12 ">
+                <div class="col-lg-4 col-sm-12 flex-teacher">
                   <div class="grid-carta "><!-- inicio del grid -->
                     <p class="nombre">Javier Mele</p><!-- Nombre del teacher -->
                     <img src="./img/javier mele.jpg" alt="" class="fotito"><!-- Fotito del teacher -->
@@ -74,7 +179,7 @@
                 <!------------Fin del SEGUNDO teacher---------------------->      
 
                 <!--------------- Inicio TERCER teacher ---------------------->        
-                <div class="col-lg-4 col-sm-12  ">
+                <div class="col-lg-4 col-sm-12 flex-teacher ">
                   <div class="grid-carta center"><!-- inicio del grid -->
                     <p class="nombre">Mila Mele Perez</p><!-- Nombre del teacher -->
                     <img src="./img/mila mele.jpg" alt="" class="fotito"><!-- Fotito del teacher -->
@@ -97,21 +202,130 @@
         <!-- FIN ARTICLE2 (NUESTROS TEACHERS) -->
 
         <!-- INCICIO ARTICLE3 (CURSOS ESPECIALES) -->
-        <article>
-          <h2>Cursos Especiales</h2>
-          <div class="row">
-            <div>
-              <p>Conoce nuestros cursos especiales creados para necesidades especificas</p>
-            </div>
-            <div>
+        <article class="article3">
+          <h2 class="center">Cursos Especiales</h2>                      
+          <p class="p-desc center">Conoce nuestros cursos especiales creados para necesidades especificas</p>
+          
+          <div class="row ">
 
+            <!-- INICIO PRIMER CURSO -->
+            <div class="col-sm-6 col-lg-3 space-evenly">
+              <div class="tarjeta-cursos">
+                <div class="nombre-curso">
+                  <p>Curso Viajero</p>
+                </div>
+                <div class="precio-curso">
+                  <p class="precio-curso-precio">$20000</p>
+                  <p class="precio-curso-duracion">3 meses</p>
+                </div>
+                <div class="desc-curso">
+                  <p class="desc-curso-titulo center">Horarios:</p>
+                  <p class="desc-curso-incluye center">Martes y jueves 18hs</p>
+                  <button type="button" class="desc-curso-comprar center">Comprar</button>
+                </div>
+              </div>
             </div>
+            
+            <!-- FIN PRIMER CURSO -->
 
+
+            <!-- INICIO SEGUNDO CURSO -->
+              <div class="col-sm-6 col-lg-3 space-evenly">
+                <div class="tarjeta-cursos">
+                  <div class="nombre-curso">
+                    <p>Nombre Curso</p>
+                  </div>
+                  <div class="precio-curso">
+                    <p class="precio-curso-precio">Precio Curso</p>
+                    <p class="precio-curso-duracion">Tiempo curso</p>
+                  </div>
+                  <div class="desc-curso">
+                    <p class="desc-curso-titulo center">Titulo Descripcion curso</p>
+                    <p class="desc-curso-incluye center">Incluye descripcion</p>
+                    <button type="button" class="desc-curso-comprar center">Comprar</button>
+                  </div>
+                </div>
+
+              </div>
+              
+            
+            <!-- FIN SEGUNDO CURSO -->
+
+
+            <!-- INICIO TERCER CURSO -->
+
+              <div class="col-sm-6 col-lg-3 space-evenly">
+                <div class="tarjeta-cursos">
+                  <div class="nombre-curso">
+                    <p>Nombre Curso</p>
+                  </div>
+                  <div class="precio-curso">
+                    <p class="precio-curso-precio">Precio Curso</p>
+                    <p class="precio-curso-duracion">Tiempo curso</p>
+                  </div>
+                  <div class="desc-curso">
+                    <p class="desc-curso-titulo center">Titulo Descripcion curso</p>
+                    <p class="desc-curso-incluye center">Incluye descripcion</p>
+                    <button type="button" class="desc-curso-comprar center">Comprar</button>
+                  </div>
+                </div>
+
+              </div>
+            
+            <!-- FIN TERCER CURSO -->
+
+            <!-- INICIO CUARTO CURSO -->
+
+              <div class="col-sm-6 col-lg-3 space-evenly">
+                <div class="tarjeta-cursos">
+                  <div class="nombre-curso">
+                    <p>Nombre Curso</p>
+                  </div>
+                  <div class="precio-curso">
+                    <p class="precio-curso-precio">Precio Curso</p>
+                    <p class="precio-curso-duracion">Tiempo curso</p>
+                  </div>
+                  <div class="desc-curso">
+                    <p class="desc-curso-titulo center">Titulo Descripcion curso</p>
+                    <p class="desc-curso-incluye center">Incluye descripcion</p>
+                    <button type="button" class="desc-curso-comprar center">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- FIN CUARTO CURSO -->
+                     
           </div>
         </article>
         <!-- FIN ARTICLE3 (CURSOS ESPECIALES)) -->
 
       </section>
+
+
+      <!-----------------------------------Inicio Footer------------------------------------->
+      <footer class="footer"> 
+        <ul class="flex-footer">
+          <li>Terminos y condiciones</li>
+          <li>
+            <ul>
+              <li>Medios de pagos: </li>              
+              <li>Tarjeta de debito</li>
+              <li>tarjeta de credito</li>
+              <li>Mercado pago</li>
+              <li>Transferencia</li>
+            </ul>
+          </li>
+          <li>Contactanos
+            <ul class="flex-logo-footer">
+              <li><img src="./img/logoface.png" alt="" class="logo-footer col-lg-3 col-sm-12"></li>
+              <li><img src="./img/logoinsta.png" alt="" class="logo-footer col-lg-3 col-sm-12"></li>
+              <li><img src="./img/logo wa.png" alt="" class="logo-footer col-lg-3 col-sm-12"></li>
+              <li><img src="./img/logo mail.png" alt="" class="logo-footer col-lg-3 col-sm-12"></li>
+            </ul>
+          </li>
+        </ul> 
+      </footer>
+      <!-- ----------------------------Fin FOOTER--------------------------------------- -->
     </main>
     
 
