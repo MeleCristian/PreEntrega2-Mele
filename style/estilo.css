@@ -8,11 +8,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-section{
-    background-color: blue;
-    color: white; 
-    padding: 5px;
-}
+
 
 .center{
     align-content: center;
@@ -48,6 +44,7 @@ section{
 }
 .article2{
     background-color: #5a1eec;
+    color: white;
 }
 .article3{
     background-color: white;
@@ -64,6 +61,7 @@ section{
     padding: 5px;
     width: 100%;
     color: black;
+    height: 100%;
 }
 h2{
     font-size: 400%;
@@ -211,7 +209,6 @@ footer{/*color grid area altura del footer*/
     
     background-color:#5a1eec;
     color: white;
-    margin-top: 10px;
     font-size: 125%;
     text-align: center;
    
@@ -248,4 +245,52 @@ ul{
         display: flex;
         justify-content: center;    
     }
+}
+
+.carousel-inner{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.grid-carrusel{
+    display: grid;
+    grid-template-columns: 0.5fr 10fr 0.5fr;
+    grid-template-rows: 10fr  0.5fr;
+    grid-template-areas: 
+    "izquierda medio derecha"
+    "abajo abajo abajo";
+}
+.carousel-inner{
+    grid-area: medio;
+}
+.carousel-control-prev{
+    grid-area: izquierda;
+}
+.carousel-control-next{
+    grid-area: derecha;
+}
+.carousel-indicators{
+    grid-area: abajo;
+    margin-bottom: 0;
+}
+.carousel-control-next{
+    width: 100%;
+    opacity: 15;
+}
+.carousel-control-prev{
+    width: 100%;
+    opacity: 15;
+}
+.actividad{
+    padding: 5px;
+}
+
+.form-select{
+    width: 200px;
+    display: inline;
+}
+.text-form{
+    font-weight: bold;
+    margin-bottom: 0;
 }
