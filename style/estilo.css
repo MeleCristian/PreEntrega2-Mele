@@ -64,11 +64,11 @@
     height: 100%;
 }
 h2{
-    font-size: 400%;
+    font-size: 3rem;
     font-weight: bold;
 }
 .p-desc{
-    font-size: 200%;
+    font-size: 2rem;
 }
 .container-fluid{
     padding: 0;
@@ -247,6 +247,24 @@ ul{
     }
 }
 
+@media screen and (max-width:430px){
+    .flex-footer{/*Display Flex al ul del contenedor de logos*/
+        display: block;
+    }
+    .min400{
+        display: none;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .p-desc{
+        font-size: 1rem;
+    }
+}
+  
+
 .carousel-inner{
     padding-left: 10px;
     padding-right: 10px;
@@ -293,4 +311,27 @@ ul{
 .text-form{
     font-weight: bold;
     margin-bottom: 0;
+}
+
+.relleno{
+    height: 30vh;
+}
+
+.cursosa3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heigh-alumnos{
+    height: 70vh;
+}
+
+.carrusel-alumnos{
+    height: 30vh;
+}
+
+.altura-minima{
+    min-height: 80vh;
 }
